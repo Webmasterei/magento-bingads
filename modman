@@ -1,0 +1,4 @@
+app/code/community/Webmasterei/Bingads
+app/design/frontend/base/default/layout/webmasterei_bingads.xml
+app/design/frontend/base/default/template/webmasterei/bingads
+app/etc/modules/Webmasterei_Bingads.xml

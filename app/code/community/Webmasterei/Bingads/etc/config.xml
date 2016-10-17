@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Webmasterei Prange
+ * @copyright Copyright (c) 2015 Webmasterei Prange (https://www.webmasterei-prange.de)
+ * @package Magento Content Widgets
+ */
+-->
+<config>
+    <modules>
+        <Webmasterei_Bingads>
+            <version>0.0.1</version>
+        </Webmasterei_Bingads>
+    </modules>
+    <global>
+        <helpers>
+            <bingads>
+                <class>Webmasterei_Bingads_Helper</class>
+            </bingads>
+        </helpers>
+        <blocks>
+            <bingads>
+                <class>Webmasterei_Bingads_Block</class>
+            </bingads>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <bingads>
+                    <file>webmasterei_bingads.xml</file>
+                </bingads>
+            </updates>
+        </layout>
+    </frontend>
+</config>

@@ -1,96 +1,15 @@
 {
-    "name": "magento/core",
+    "name": "webmasterei/webmasterei_bingads",
     "license": "OSL-3.0",
-    "type": "magento-core",
-    "description": "Magento Core",
-    "homepage": "http://www.magentocommerce.com",
-    "require": {},
-    "extra": {
-        "map": [
-            [
-                "app",
-                "app"
-            ],
-            [
-                "dev",
-                "dev"
-            ],
-            [
-                "downloader",
-                "downloader"
-            ],
-            [
-                "errors",
-                "errors"
-            ],
-            [
-                "includes",
-                "includes"
-            ],
-            [
-                "js",
-                "js"
-            ],
-            [
-                "lib",
-                "lib"
-            ],
-            [
-                "media",
-                "media"
-            ],
-            [
-                "shell",
-                "shell"
-            ],
-            [
-                "skin",
-                "skin"
-            ],
-            [
-                "var",
-                "var"
-            ],
-            [
-                ".htaccess",
-                ".htaccess"
-            ],
-            [
-                "api.php",
-                "api.php"
-            ],
-            [
-                "cron.php",
-                "cron.php"
-            ],
-            [
-                "cron.sh",
-                "cron.sh"
-            ],
-            [
-                "favicon.ico",
-                "favicon.ico"
-            ],
-            [
-                "get.php",
-                "get.php"
-            ],
-            [
-                "index.php",
-                "index.php"
-            ],
-            [
-                "install.php",
-                "install.php"
-            ],
-            [
-                "mage",
-                "mage"
-            ],
-            [
-                "LICENSE.html",
-                "LICENSE.html"
-            ]
-        ]
-    }
+    "type": "magento-module",
+    "description": "Setup Bingads UET-Tag",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Webmasterei Prange",
+            "email":"info@webmasterei-prange.de"
+        }
+    ]
 }

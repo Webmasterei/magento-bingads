@@ -1,0 +1,22 @@
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <bingads translate="title" module="Webmasterei_Bingads">
+                                        <title>Webmasterei Bingads</title>
+                                        <sort_order>999</sort_order>
+                                    </bingads>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

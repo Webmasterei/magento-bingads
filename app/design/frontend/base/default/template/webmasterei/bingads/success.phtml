@@ -1,0 +1,15 @@
+<?php
+// Webmasterei Prange
+// Bingads Conversion Goal Tracking
+// Define Conversion Goal Price
+// class Webmasterei_Bingads_Block_Success extends Mage_Checkout_Block_Success
+?>
+<?php
+$amount = $this->getBingadsConversionAmout();
+?>
+<script>
+    var amount = 0;
+    amount = <?php echo $amount ?>;
+    window.uetq = window.uetq || [];
+    window.uetq.push({ 'gv': amount });
+</script>
