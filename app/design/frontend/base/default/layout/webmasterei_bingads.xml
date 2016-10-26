@@ -1,29 +1,21 @@
 <?xml version="1.0"?>
 <layout>
     <default>
-        <block type="bingads/pages" name="bingads_allpages" after="bingads_success" template="webmasterei/bingads/pages.phtml" />
         <reference name="after_body_start">
-            <action method="insert" ifconfig="bingads/bingads_configuration/bingads_active">
-                <block>bingads_allpages</block>
-            </action>
+
+                <block type="bingads/pages" name="bingads_allpages" before="bingads_success" template="webmasterei/bingads/pages.phtml" />
         </reference>
     </default>
 
     <checkout_onepage_success>
-        <block type="bingads/success" name="bingads_success" before="bingads_allpages" template="webmasterei/bingads/success.phtml"/>
         <reference name="after_body_start">
-            <action method="insert" ifconfig="bingads/bingads_configuration/bingads_active">
-                <block>bingads_success</block>
-            </action>
+            <block type="bingads/success" name="bingads_success" after="bingads_allpages" template="webmasterei/bingads/success.phtml"/>
         </reference>
     </checkout_onepage_success>
 
     <checkout_multishipping_success>
-        <block type="bingads/success" name="bingads_success" before="bingads_allpages" template="webmasterei/bingads/success.phtml"/>
         <reference name="after_body_start">
-            <action method="insert" ifconfig="bingads/bingads_configuration/bingads_active">
-                <block>bingads_success</block>
-            </action>
+            <block type="bingads/success" name="bingads_success" after="bingads_allpages" template="webmasterei/bingads/success.phtml"/>
         </reference>
     </checkout_multishipping_success>
 </layout>

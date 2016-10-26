@@ -5,8 +5,10 @@
 <?php
 $uetTag = $this->getUetTag();
 $isActive = $this->getBingadsActive();
-?>
+$bingactive = Mage::getStoreConfig('bingads/bingads_configuration/bingads_active');
 
+?>
+<?php if($bingactive) : ?>
 <script>
     (function (w, d, t, r, u) {
         var f, n, i;
@@ -25,3 +27,4 @@ $isActive = $this->getBingadsActive();
 <noscript>
     <img src="//bat.bing.com/action/0?ti=<?php echo $uetTag; ?>&Ver=2" height="0" width="0" style="display:none; visibility: hidden;"/>
 </noscript>
+<?php endif; ?>

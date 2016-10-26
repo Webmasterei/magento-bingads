@@ -5,11 +5,14 @@
 // class Webmasterei_Bingads_Block_Success extends Mage_Checkout_Block_Success
 ?>
 <?php
+$bingactive = Mage::getStoreConfig('bingads/bingads_configuration/bingads_active');
 $amount = $this->getBingadsConversionAmout();
 ?>
+<?php if($bingactive) : ?>
 <script>
     var amount = 0;
     amount = <?php echo $amount ?>;
     window.uetq = window.uetq || [];
     window.uetq.push({ 'gv': amount });
 </script>
+<?php endif; ?>
